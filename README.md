@@ -38,6 +38,13 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 - php artisan make:model Category -mcr #that make model , migration , controller
 - php artisan route:list
 - php artisan optimize:clear
+- php artisan install:api
+- php artisan make:resource ProductResource
+
+## Database tables
+- Multi users(users,admins,superadmin)
+- CURD opertion(categories)
+- REST Api (products)
 
 ## Laravel Sponsors
 
