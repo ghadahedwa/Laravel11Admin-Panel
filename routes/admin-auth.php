@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\ProfileAdminController;
 use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Admin\Auth\RegisteredAdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
 
 Route::prefix('admin')->name('admin.')->group(function (){
     Route::middleware('guest:admin')->group(function () {
@@ -27,5 +28,7 @@ Route::prefix('admin')->name('admin.')->group(function (){
         Route::put('password', [PasswordController::class, 'update'])->name('password.update');
 
         Route::post('logout', [LoginAdminController::class, 'destroy'])->name('logout');
+
+        Route::resource('category',CategoryController::class);
     });
 });

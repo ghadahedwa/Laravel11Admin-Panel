@@ -8,11 +8,11 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Edit Category
-                            <a href="{{url('category')}}" class="btn btn-danger float-end">Back</a>
+                            <a href="{{url('admin/category')}}" class="btn btn-danger float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('category.update',$category->id)}}" method="post">
+                        <form action="{{route('admin.category.update',$category->id)}}" method="post">
                             @csrf
                             @method('PUT')
                             <div class="mb-3">

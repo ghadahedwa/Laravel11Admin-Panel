@@ -43,7 +43,7 @@ class CategoryController extends Controller
             'status'=>$request->status==true?1:0,
         ]);
 
-        return redirect('/category')->with('status','Created Sucessfully');
+        return redirect('/admin/category')->with('status','Created Sucessfully');
     }
 
     /**
@@ -79,7 +79,7 @@ class CategoryController extends Controller
             'status'=>$request->status==true?1:0,
         ]);
 
-        return redirect('/category')->with('status','Updated Sucessfully');
+        return redirect('/admin/category')->with('status','Updated Sucessfully');
     }
 
     /**
@@ -88,6 +88,6 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         $category->delete();
-        return redirect('/category')->with('status','Created Sucessfully');
+        return redirect('/admin/category')->with('status','Created Sucessfully');
     }
 }

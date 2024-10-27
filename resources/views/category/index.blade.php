@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Category List
-                            <a href="{{url('category/create')}}" class="btn btn-primary float-end">Add Category</a>
+                            <a href="{{url('admin/category/create')}}" class="btn btn-primary float-end">Add Category</a>
                         </h4>
                     </div>
                     <div class="card-body">
@@ -35,9 +35,9 @@
                                 <td>{{$category->description}}</td>
                                 <td>{{$category->status==1?'Visible':'Hidden'}}</td>
                                 <td>
-                                    <a href="{{route('category.edit',$category->id)}}" class="btn btn-success">Edit</a>
-                                    <a href="{{route('category.show',$category->id)}}" class="btn btn-info">Show</a>
-                                    <form action="{{route('category.destroy',$category->id)}}" method="POST" class="d-inline">
+                                    <a href="{{route('admin.category.edit',$category->id)}}" class="btn btn-success">Edit</a>
+                                    <a href="{{route('admin.category.show',$category->id)}}" class="btn btn-info">Show</a>
+                                    <form action="{{route('admin.category.destroy',$category->id)}}" method="POST" class="d-inline">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Delete</button>

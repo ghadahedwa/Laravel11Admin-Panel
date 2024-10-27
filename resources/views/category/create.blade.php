@@ -8,11 +8,11 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Create Category
-                            <a href="{{url('category')}}" class="btn btn-danger float-end">Back</a>
+                            <a href="{{url('admin/category')}}" class="btn btn-danger float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('category.store')}}" method="post">
+                        <form action="{{route('admin.category.store')}}" method="post">
                             @csrf
                             <div class="mb-3">
                                 <label>Name</label>

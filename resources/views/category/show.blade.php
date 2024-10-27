@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Show Category
-                            <a href="{{url('category')}}" class="btn btn-danger float-end">Back</a>
+                            <a href="{{url('admin/category')}}" class="btn btn-danger float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">

@@ -14,11 +14,11 @@
 </head>
 <body>
 
-@include('layouts.partials.navbar')
+@include('admin.layouts.partials.navbar')
 
 <div id="layoutSidenav">
     <div id="layoutSidenav_nav">
-        @include('layouts.partials.sidebar')
+        @include('admin.layouts.partials.sidebar')
     </div>
     <div id="layoutSidenav_content">
         <main>
@@ -26,7 +26,7 @@
                 @yield('content')
             </div>
         </main>
-        @include('layouts.partials.footer')
+        @include('admin.layouts.partials.footer')
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
